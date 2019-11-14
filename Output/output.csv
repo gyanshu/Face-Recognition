@@ -1,4 +1,4 @@
-OUTPUT
+OUTPUT,,
 k = 1,,
 Image name, Predicted image number, Actual image number
 1.2.txt, 1, 1
