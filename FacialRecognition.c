@@ -159,15 +159,11 @@ int find_closest(int training_set[NUMOFPEOPLE][NUMOFFILE][256], int num_persons,
 }
 
 int main (int argc, char *argv[]){
-
-    clock_t tStart, tEnd;
-
 	int k = atoi(argv[1]);
     int i, j, acc = 0, numOfTests = 0;
 	int histogram[NUMOFPEOPLE][NUMOFFILE][256], testhistogram[NUMOFPEOPLE][NUMOFFILE][256];
 	int** result [NUMOFPEOPLE][NUMOFFILE];
     result[0][0] = alloc_2d_matrix(IMGH, IMGW);
-    tStart = clock();
     //TRAINING
 	for (i = 0; i < NUMOFPEOPLE; i++){
 		for (j = 0 ; j < NUMOFFILE; j++){
@@ -175,7 +171,7 @@ int main (int argc, char *argv[]){
 			sprintf(buf, "Database/images/%d.%d.txt", i+1, j+1);
 			result[i][j] = read_pgm_file(buf, IMGH, IMGW);
 			if (j < k ) {
-				create_histogram(histogram[i][j],result[i][j], IMGH, IMGW);
+				create_histogram(histogram[i][j],result[i][j], IMGH, IMGW);				
 			}
 			else {
 				create_histogram(testhistogram[i][j],result[i][j], IMGH, IMGW);
@@ -193,9 +189,7 @@ int main (int argc, char *argv[]){
             numOfTests++;
 		}
 	}
-	printf("Accuracy: %d correct answers for %d tests - %.2f%%,,\n", acc, numOfTests, ((float)acc/numOfTests)*100 );
+	printf("Accuracy: %d correct answers for %d tests - %.2f%%,,\n\n", acc, numOfTests, ((float)acc/numOfTests)*100 );
 
-	tEnd = clock();
-	printf("Runtime: %.2f ms,,\n", (double)(tEnd - tStart)/CLOCKS_PER_SEC);
 	return 0;
 }
