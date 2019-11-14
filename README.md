@@ -1,12 +1,5 @@
 # Face Recognition
 
-## Contents
-
-1. [Introduction](#introduction)
-2. [Step-by-Step](#step-by-step)  
-3. [Conclusion](#Conclusion)
-4. [Usage](#Usage)
-
 # Introduction
 
 We have done face recognition using Local Binary Patterns Histograms (LBPH). Local Binary Patterns (LBP) is a type of visual
