@@ -3,7 +3,7 @@ rm -f Output/output.csv
 ./compile.sh
 echo
 echo -ne "Running"
-echo "OUTPUT" >> Output/output.csv
+echo "OUTPUT,," >> Output/output.csv
 for i in 1 2 5 7 10; 
 do
 	echo -ne "."
