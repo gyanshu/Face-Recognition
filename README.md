@@ -27,8 +27,8 @@ identifier(unqiue number). In each image windows of 3 * 3 with stride 1 are used
 3. Make an array of size 256 for every image for storing its historgram intialized with zeroes.
 4. In a 3 * 3 matrix compare all the neighbouring values to the middle one and if the neighbouring values are greater or
 equal to the middle one put 1 for it, otherwise put 0.
-5. Now start from the top left neighbour and make a binary number which will be of length 8 (as there are 8 neighbours)
-moving clockwise.
+5. Now start from the left neighbour and make a binary number which will be of length 8 (as there are 8 neighbours)
+moving anti-clockwise.
 6. Convert that binary number into its decimal representation and increment that index in the histogram array by 1. Now
 the histogram is created. With that training phase is over.
 7. Now for testing, make historgrams for the test images too.
