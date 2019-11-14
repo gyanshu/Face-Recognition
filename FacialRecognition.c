@@ -172,7 +172,7 @@ int main (int argc, char *argv[]){
 	for (i = 0; i < NUMOFPEOPLE; i++){
 		for (j = 0 ; j < NUMOFFILE; j++){
             char buf[64];
-			sprintf(buf, "./images/%d.%d.txt", i+1, j+1);
+			sprintf(buf, "Database/images/%d.%d.txt", i+1, j+1);
 			result[i][j] = read_pgm_file(buf, IMGH, IMGW);
 			if (j < k ) {
 				create_histogram(histogram[i][j],result[i][j], IMGH, IMGW);
