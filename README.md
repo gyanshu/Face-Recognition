@@ -1,6 +1,6 @@
 # Face Recognition
 
-# Introduction
+## Introduction
 
 We have done face recognition using Local Binary Patterns Histograms (LBPH). Local Binary Patterns (LBP) is a type of visual
 descriptor used for classification in computer vision. LBP was first described in 1994 and has since been found to be a
@@ -9,7 +9,7 @@ oriented gradients (HOG) descriptor, it improves the detection performance consi
 
 As LBP is a visual descriptor it can be used for face recognition tasks, as can be seen in the following Step-by-Step explanation.
 
-# Step-by-Step
+## Step-by-Step
 
 In this section, it is shown a step-by-step explanation of the LBPH algorithm for face recognition as used in our
 application:
@@ -31,13 +31,13 @@ the histogram is created. With that training phase is over.
 10. The above program is run multiple times varying the number of test and train images and the accuracy is printed in 
 each case.
 
-# Conclusion
+## Conclusion
 
 The output is saved in /Output/output.csv. It shows that when we keep half the images for training and other half for 
 testing accuracy is more than 98%.
 
 
-# Usage
+## Usage
 * Run below commands in a terminal.
 ```bash
 git clone https://github.com/gyanshu/Face-Recognition
