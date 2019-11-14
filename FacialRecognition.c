@@ -193,9 +193,9 @@ int main (int argc, char *argv[]){
             numOfTests++;
 		}
 	}
-	printf("Accuracy: %d correct answers for %d tests - %.2f%%\n", acc, numOfTests, ((float)acc/numOfTests)*100 );
+	printf("Accuracy: %d correct answers for %d tests - %.2f%%,,\n", acc, numOfTests, ((float)acc/numOfTests)*100 );
 
 	tEnd = clock();
-	printf("Runtime: %.2f ms\n", (double)(tEnd - tStart)/CLOCKS_PER_SEC);
+	printf("Runtime: %.2f ms,,\n", (double)(tEnd - tStart)/CLOCKS_PER_SEC);
 	return 0;
 }
